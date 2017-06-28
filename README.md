@@ -12,5 +12,3 @@ This is web-based application that reads RSS feeds. Testing has been given high 
 3. Find the ZIP file in your local drive and unzip it
 4. Open the index.html file with your favorite browser
 5. The testing suit will run automatically at the bottom of the page
-
-Alternatively, you can find the web app here: https://jpabonr.github.io/udacity-feed-reader-testing/
