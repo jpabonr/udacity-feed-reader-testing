@@ -63,7 +63,7 @@ $(function() {
          it('have a name', function() {
             for (var i = 0; i < allFeeds.length; i++) {
                 expect(allFeeds[i].name).toBeDefined();
-                expect(allFeeds[i].name).not.toBe(0);
+                expect(allFeeds[i].name.length).not.toBe(0);
             }
         });
     });
@@ -110,14 +110,11 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
         beforeEach(function(done) {
-            loadFeed(0, function() {
-                done();
-            });
+            loadFeed(0, done);
         });
 
-        it('displays at least one entry after the feed loads', function(done) {
-            expect($('.feed').find('.entry').length).toBeGreaterThan(0);
-            done();
+        it('displays at least one entry after the feed loads', function() {
+            expect($('.feed .entry').length).toBeGreaterThan(0);
         });
     });
     /* DONE: Write a new test suite named "New Feed Selection" */
