@@ -125,8 +125,8 @@ $(function() {
 
             loadFeed(0, function() {
                 feed0 = $('.feed').html();
+                done();
             });
-            done();
         });
 
         beforeEach(function(done) {
